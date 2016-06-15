@@ -28,6 +28,9 @@ function cidr2mask($netmask) {
 // 24 array would be much faster. Maybe next time.
 // Too lazy to type it out or too lazy to do the math?
 // Never too lazy for comments that are never read.
+// I also wasn't to lazy to google and find out that
+// LinickX had already done it: 
+// https://gist.github.com/linickx/1309388/cf8fb723b51ba60521f92e0cc930b59cb5d2e5d9#file-cidr2mask-php
 $netmask_result="";
 for($i=1; $i <= $netmask; $i++) {
   $netmask_result .= "1";
